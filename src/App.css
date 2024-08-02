@@ -1,0 +1,75 @@
+body {
+    background-color: #0d0d0d;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 90%;
+}
+
+.dashboard-header {
+    background-color: #1a1a1a;
+    box-shadow: inset 4px 4px 8px #0b0b0b, inset -4px -4px 8px #232323;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.dashboard-sidebar {
+    background-color: #1a1a1a;
+    box-shadow: inset 4px 4px 8px #0b0b0b, inset -4px -4px 8px #232323;
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+}
+
+.dashboard-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-sidebar nav ul li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.dashboard-sidebar nav ul li:hover {
+    color: #00ffff;
+}
+
+.dashboard-main {
+    margin-left: 220px;
+    padding: 20px;
+    padding-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #232323;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #00ffff;
+}
